@@ -14,8 +14,7 @@
 #
 #    Example output for an airport code:
 #
-#    ORD (Chicago): The temperature is 30.0 F (-1.1 C),
-#    and the wind is Northeast at 8.1mph.
+#    ORD (Chicago): The temperature is 30.0 F (-1.1 C), and the wind is Northeast at 8.1mph.
 #
 #    Good luck!
 

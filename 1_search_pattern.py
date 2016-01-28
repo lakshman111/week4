@@ -18,11 +18,14 @@ for station in stations:
 
   latitude_delta = math.fabs(station_latitude - young_latitude)
   longitude_delta = math.fabs(station_longitude - young_longitude)
+  distance_to_this_station = math.hypot(latitude_delta, longitude_delta)
 
-  # ??
+  print("The distance from Young to", station['stationName'], ": ", distance_to_this_station)
+
+  # now what?
 
 
 
-
+print()
 print("The nearest station is:", "(no idea)")
 print("There are", "(no idea)", "bikes there right now!")
