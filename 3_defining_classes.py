@@ -11,6 +11,6 @@ import faa;
 
 
 
-# print("O'Hare Airport serves the city of", get_city_for('ORD'))
-# print("The temperature is:", get_temperature_at('ORD'))
-# print("The wind is:", get_wind_at('ORD'))
+# print("O'Hare Airport serves the city of", my_airport.city())
+# print("The temperature is:", my_airport.temp())
+# print("The wind is:", my_airport.wind())
