@@ -5,6 +5,9 @@ import faa;
 
 class Airport:
 
+  # This is called a constructor, is automatically called with whatever is passed to a construction statement
+  def __init__(self, airport_code):
+    self.code = airport_code
   # people ususally use "self" by social convention
   def city(self):
     # whenever you call a function (on line 23), it always passes the object on the left of the dot
@@ -20,19 +23,22 @@ class Airport:
     data = faa.get_weather(self.code)
     return data['weather']['wind']
 
-# give me a new instance of an airport
-my_airport = Airport()
-your_airport = Airport()
 
-# putting data into that instance
-my_airport.code = 'ORD'
-your_airport.code = 'SFO'
+
+
+# give me a new instance of an airport
+my_airport = Airport('ORD')
+# your_airport = Airport()
+
+# # putting data into that instance
+# my_airport.code = 'ORD'
+# your_airport.code = 'SFO'
 
 
 
 
 
 print("O'Hare Airport serves the city of", my_airport.city())
-print("O'Hare Airport serves the city of", your_airport.city())
+# print("O'Hare Airport serves the city of", your_airport.city())
 print("The temperature is:", my_airport.temp())
 print("The wind is:", my_airport.wind())
