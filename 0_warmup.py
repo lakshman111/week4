@@ -21,3 +21,12 @@
 airport_codes = ['ORD', 'SFO', 'JFK']
 
 # Your code goes here:
+
+from faa import get_weather
+# Or could have done...
+# import faa
+# for code in airport_codes:
+#   data = faa.get_weather(code)
+
+for airport in airport_codes:
+  print(get_weather(airport)['name'] + ": The temperature is ", get_weather(airport)['weather']['temp'], "and the wind is", get_weather(airport)['weather']['wind'])
